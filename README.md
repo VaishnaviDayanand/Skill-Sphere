@@ -14,26 +14,42 @@ tkinter: Python's standard GUI toolkit for creating the graphical interface.
 Pillow: Python Imaging Library (PIL) for handling image resizing and manipulation.
 MySQL: Relational database management system used for storing user data.
 
-**Getting Started:**
+### Requirements
 
-To run this project locally, clone the repository, install the necessary dependencies, and execute the main script.
+- Python 3.11
+- Visual Studio Code (or any other code editor)
+- MySQL Workbench
 
-**Usage Instructions:**
+## Setup Instructions
 
-**1. Clone the Repository:**
+### Step 1: Install Python 3.11
 
-git clone https://github.com/your-username/Skill-Sphere.git
-cd Skill-Sphere
+Make sure Python 3.11 is installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
 
-**2. Create a Virtual Environment (optional but recommended):**
+### Step 2: Install Visual Studio Code
 
-python -m venv venv
-source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+Download and install Visual Studio Code from [here](https://code.visualstudio.com/).
 
-**3. Install Dependencies:**
+### Step 3: Install Python extension in Visual Studio Code
 
-pip install -r requirements.txt
+Open Visual Studio Code and install the Python extension. You can find it in the Extensions view (Ctrl+Shift+X) and search for "Python".
 
-**4. Run the Application:**
+### Step 4: Set up the MySQL database
+Make sure MySQL is installed and running.
+Create a database for the project:
+  CREATE DATABASE skillsphere;
+Update the database connection settings in the code (if necessary).
 
-python main.py
+### Step 6: Import the database schema
+Locate the schema.sql file included in the repository.
+Import the schema into your MySQL database:
+  mysql -u yourusername -p skillsphere < schema.sql
+Replace yourusername with your MySQL username.
+
+### Step 7: Ensure images are in place
+Create an images folder in the root directory of the project.
+Add the required background images to this folder. Ensure the images are named appropriately as referenced in your code.
+
+### Step 8: Run the application
+Run the following command in the terminal to start the application:
+  main.py
