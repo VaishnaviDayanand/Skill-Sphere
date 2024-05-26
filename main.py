@@ -23,8 +23,8 @@ def generate_sid():
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Vaishu02",
-        database="training_management_db",
+        password="#yourpassword",
+        database="schema",
         port=3306
     )
     cursor = connection.cursor()
@@ -46,8 +46,8 @@ def check_login(MailId, Pwd):
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Vaishu02",
-        database="training_management_db",
+        password="#yourpassword",
+        database="schema",
         port=3306
     )
     cursor = connection.cursor()
@@ -69,8 +69,8 @@ def fetch_user_id(mail_id):
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Vaishu02",
-        database="training_management_db",
+        password="#yourpassword",
+        database="schema",
         port=3306
     )
     cursor = connection.cursor()
@@ -93,8 +93,8 @@ def create_account_clicked(Name, Gender, Age, MailId, PhoneNo, CollegeName, Bran
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Vaishu02",
-        database="training_management_db",
+        password="#yourpassword",
+        database="schema",
         port=3306
     )
     cursor = connection.cursor()
@@ -426,8 +426,8 @@ def on_admin_close():
 db_connection = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Vaishu02",
-    database="training_management_db",
+    password="#yourpassword",
+    database="schema",
     port=3306
 )
 
@@ -953,8 +953,8 @@ def display_my_courses(window):
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Vaishu02",
-        database="training_management_db",
+        password="#yourpassword",
+        database="schema",
         port=3306
     )
     cursor = connection.cursor()
@@ -1054,8 +1054,8 @@ def open_courses_page():
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Vaishu02",
-        database="training_management_db",
+        password="#yourpassword",
+        database="schema",
         port=3306
     )
     cursor = connection.cursor()
@@ -1150,8 +1150,8 @@ def open_trainers_page():
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Vaishu02",
-        database="training_management_db",
+        password="#yourpassword",
+        database="schema",
         port=3306
     )
     cursor = connection.cursor()
@@ -1256,8 +1256,8 @@ class BillingPage:
         self.connection = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Vaishu02",
-            database="training_management_db",
+            password="#yourpassword",
+            database="schema",
             port=3306
         )
         self.cursor = self.connection.cursor()
