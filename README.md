@@ -53,3 +53,4 @@ Add the required background images to this folder. Ensure the images are named a
 ### Step 8: Run the application
 Run the following command in the terminal to start the application:
   main.py
+a
